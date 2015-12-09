@@ -3,6 +3,7 @@ python:
  - "2.7"
 services: 
  - elasticsearch
+build_image: shippable/minv2
 install: pip install --use-mirrors -r requirements.txt
 script:
  - python sample.py
@@ -10,5 +11,4 @@ notifications:
   email:
     - varsha@shippable.com
 archive: true
-
-cache: true
+#cache: true
